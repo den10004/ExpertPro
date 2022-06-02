@@ -1,0 +1,242 @@
+.main {
+  background-color: black;
+}
+
+.main__wrapper {
+  display: flex;
+  padding-top: 25px;
+}
+
+@media screen and (max-width: 1460px) {
+  .main__wrapper {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .main__wrapper {
+    flex-direction: column;
+  }
+}
+
+.main__left {
+  width: 40%;
+  padding-top: 70px;
+  z-index: 1;
+}
+
+@media screen and (max-width: 1279px) {
+  .main__left {
+    width: 100%;
+    padding-top: 10px;
+  }
+}
+
+.main__left > h3 {
+  font-size: 30px;
+  font-family: "PT Sans", sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+@media screen and (max-width: 768px) {
+  .main__left > h3 {
+    font-size: 20px;
+  }
+}
+
+.main__left > h1 {
+  font-size: 90px;
+  font-family: "Myriad Pro";
+  color: rgb(191, 144, 55);
+  text-align: left;
+  line-height: 0.8;
+  margin: 30px 0 30px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .main__left > h1 {
+    font-size: 40px;
+    margin: 20px 0 20px 0;
+  }
+}
+
+.main__left-list {
+  list-style: none;
+  position: relative;
+  max-width: 600px;
+  font-size: 30px;
+  font-family: "Myriad Pro";
+  color: rgb(191, 144, 55);
+  line-height: 2.2;
+}
+
+@media screen and (max-width: 460px) {
+  .main__left-list {
+    font-size: 20px;
+  }
+}
+
+.main__left-list:after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 7px;
+  width: 1px;
+  height: 210px;
+  background: rgb(191, 144, 55);
+}
+
+@media screen and (max-width: 768px) {
+  .main__left-list:after {
+    height: 182px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .main__left-list:after {
+    height: 113px;
+  }
+}
+
+.main__left-list > li {
+  padding-left: 20px;
+  position: relative;
+}
+.main__left-list > li:before {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  background: rgb(191, 144, 55);
+  border-radius: 50%;
+}
+.main__left-list > li:after {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 4px;
+  height: 1px;
+  background: rgb(191, 144, 55);
+}
+.main__left-list > li:last-child:before {
+  background: none;
+}
+.main__left-list > li:last-child:after {
+  width: 100px;
+  top: 39px;
+}
+
+@media screen and (max-width: 768px) {
+  .main__left-list > li:last-child:after {
+    display: none;
+  }
+}
+
+.main__left-list > li:last-child {
+  padding-left: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .main__left-list > li:last-child {
+    padding-left: 0px;
+  }
+}
+
+.main__left-list > li > button {
+  font-size: 25px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 600;
+  color: black;
+  width: 440px;
+  height: 60px;
+  border: 1.2px solid rgb(200, 171, 72);
+  border-radius: 40px;
+  background-color: rgb(200, 171, 72);
+  cursor: pointer;
+}
+
+.main__left-list > li > button:hover {
+  background-color: rgb(231, 184, 28);
+}
+
+@media screen and (max-width: 525px) {
+  .main__left-list > li > button {
+    width: 95%;
+    font-size: 20px;
+  }
+}
+
+.main__right {
+  width: 60%;
+  position: relative;
+}
+
+@media screen and (max-width: 1279px) {
+  .main__right {
+    width: 100%;
+  }
+}
+
+.main__right > img {
+  width: 70%;
+}
+
+.main__right-parter {
+  position: absolute;
+  top: 130px;
+  left: 450px;
+  right: 0;
+  font-size: 16px;
+  font-family: "Myriad Pro";
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 1460px) {
+  .main__right-parter {
+    left: 450px;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .main__right-parter {
+    left: 550px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .main__right-parter {
+    left: auto;
+    width: 310px;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .main__right-parter {
+    width: 90%;
+  }
+}
+
+.main__right-parter > hr {
+  border: none;
+  color: rgb(191, 144, 55);
+  background-color: rgb(191, 144, 55);
+  height: 1px;
+}
+
+.main__right-parter > p:first-child {
+  color: rgb(255, 255, 255);
+}
+.sd {
+  color: rgb(191, 144, 55);
+}
+
+.main__right-parter > p:last-child {
+  color: rgb(191, 144, 55);
+  line-height: 1.5;
+}

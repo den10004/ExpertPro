@@ -1,0 +1,204 @@
+.examination {
+  padding: 70px 0 70px 0;
+}
+
+@media screen and (max-width: 1460px) {
+  .examination {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .examination {
+    padding: 30px 0 30px 0;
+  }
+}
+
+.examination > h3 {
+  font-size: 40px;
+  font-family: "PT Sans", sans-serif;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.375;
+  text-align: left;
+  max-width: 1400px;
+}
+
+@media screen and (max-width: 1024px) {
+  .examination > h3 {
+    font-size: 25px;
+  }
+}
+
+.examination__headlineBlock {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .examination__headlineBlock {
+    flex-direction: column;
+  }
+}
+
+.examination__headlineBlock > h2 {
+  font-size: 100px;
+  font-family: "Myriad Pro";
+  color: rgb(191, 144, 55);
+  line-height: 1.2;
+  text-align: left;
+}
+
+@media screen and (max-width: 1024px) {
+  .examination__headlineBlock > h2 {
+    font-size: 50px;
+  }
+}
+
+.examination__headlineBlock_second {
+  background-color: rgb(125, 125, 125);
+  width: 2000px;
+  height: auto;
+  display: flex;
+  overflow: hidden;
+  margin-left: 15px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+  .examination__headlineBlock_second {
+    width: 100%;
+    margin-left: 0px;
+  }
+}
+
+.examination__headlineBlock_second > p {
+  font-size: 25px;
+  font-family: "Myriad Pro";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  width: 640px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+  .examination__headlineBlock_second > p {
+    font-size: 20px;
+  }
+}
+
+.examination__form {
+  background-image: url(../images/form.png);
+  background-repeat: no-repeat;
+  height: 645px;
+  margin-top: 45px;
+  position: relative;
+}
+
+@media screen and (max-width: 1500px) {
+  .examination__form {
+    background-image: url(../images/form-min.png);
+    margin: 25px auto;
+    background-size: 100%;
+    width: 641px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .examination__form {
+    width: 95%;
+  }
+}
+
+.examination__form_inputs {
+  position: absolute;
+  top: 90px;
+  left: 900px;
+  width: 350px;
+}
+
+@media screen and (max-width: 425px) {
+  .examination__form_inputs {
+    top: 0px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .examination__form_inputs {
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .examination__form_inputs {
+    width: 90%;
+  }
+}
+
+.examination__form_inputs > ul {
+  list-style-type: none;
+}
+
+.examination__form_inputs > ul > li {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.examination__form_inputs-input {
+  background-color: rgb(247, 247, 247);
+  box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.69);
+  width: 100%;
+  height: 58px;
+  border-radius: 40px;
+  border: none;
+  margin-top: 5px;
+  padding-left: 20px;
+}
+
+.examination__form_inputs-button {
+  font-size: 25px;
+  font-family: "PT Sans", sans-serif;
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  text-align: left;
+  background-color: rgb(191, 144, 55);
+  width: 100%;
+  height: 58px;
+  border-radius: 40px;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.examination__form_inputs-button:hover {
+  background-color: rgb(155, 132, 132);
+}
+
+@media screen and (max-width: 425px) {
+  .examination__form_inputs-button {
+    font-size: 20px;
+  }
+}
+
+.examination__form_inputs-garanties {
+  font-size: 16px;
+  font-family: "Myriad Pro";
+  color: rgb(125, 125, 125);
+}
+
+.form-font {
+  font-size: 16px;
+  font-family: "PT Sans", sans-serif;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+}
+
+.ml20 {
+  margin-left: 20px;
+}

@@ -1,0 +1,31 @@
+@import "./header.css";
+@import "./main.css";
+@import "./examination.css";
+@import "./normalize.css";
+@import "../vendor/fonts.css";
+
+body {
+  margin: 0 auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  padding-left: calc((100vw - 1440px) / 2);
+}
+
+@media screen and (max-width: 1440px) {
+  .wrapper {
+    width: 100%;
+  }
+}
+.backgroundColorBlack {
+  background-color: black;
+}
+
+.backgroundColorWhite {
+  background-color: white;
+}

@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "Myriad Pro";
+  /* font-style: normal;
+  font-weight: 400;*/
+  src: url("./fonts/MyriadPro-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "PTSans";
+  /* font-style: normal;
+  font-weight: 400;*/
+  src: url("./fonts/PTSans-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "PTSans";
+  font-style: bold;
+  /*font-weight: 400;*/
+  src: url("./fonts/PTSans-Bold.ttf") format("ttf");
+}

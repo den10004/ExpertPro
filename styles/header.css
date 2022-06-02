@@ -1,0 +1,108 @@
+.header {
+  background-color: black;
+}
+
+.container {
+  padding: 15px 0 15px 0;
+  width: 1440px;
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  grid-template-areas: "logo location telephone order";
+}
+
+@media screen and (max-width: 1460px) {
+  .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    grid-template-areas:
+      "logo logo"
+      "location telephone"
+      "order order";
+  }
+}
+
+.header__logo {
+  grid-area: logo;
+}
+
+.header-font {
+  font-size: 16px;
+  font-family: "Myriad Pro";
+}
+
+@media screen and (max-width: 768px) {
+  .header-font {
+    font-size: 14px;
+  }
+}
+
+.header__location {
+  display: flex;
+  grid-area: location;
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+}
+
+@media screen and (max-width: 768px) {
+  .header__location {
+    margin: 0 auto;
+  }
+}
+
+.header__location > p {
+  margin-left: 5px;
+}
+
+.header__telephone {
+  display: flex;
+  grid-area: telephone;
+}
+
+@media screen and (max-width: 768px) {
+  .header__telephone {
+    margin: 0 auto;
+  }
+}
+
+.header__telephone > p {
+  margin-left: 5px;
+  line-height: 1.2;
+  color: rgb(255, 255, 255);
+}
+
+.header__order {
+  display: flex;
+  grid-area: order;
+}
+
+.header__order > button {
+  font-size: 18px;
+  font-family: "PTSans";
+  color: rgb(255, 255, 255);
+  width: 323px;
+  height: 35px;
+  border: 1.2px solid rgb(200, 171, 72);
+  border-radius: 20px;
+  background-color: black;
+  cursor: pointer;
+}
+
+.header__order > button:hover {
+  background-color: rgb(87, 84, 84);
+}
+
+@media screen and (max-width: 1024px) {
+  .header__order > button {
+    width: 100%;
+  }
+}
